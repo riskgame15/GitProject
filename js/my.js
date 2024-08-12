@@ -18,7 +18,7 @@ let totalMoney = x + y * moneyOneMonth;
 
 document.write("Tong so tien nhan lai: " + totalMoney ); */
 
-
+// bai 1
 let i = 10
 let f = 20.5
 let b = true
@@ -31,3 +31,8 @@ document.write('b = ' + b);
 document.write('<br/>')
 document.write('s = ' + s );
 
+// bai 2
+let width = 20
+let height = 10
+let area = width * height
+document.write('<br>area = ' + area);
