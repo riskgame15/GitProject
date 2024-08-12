@@ -19,20 +19,30 @@ let totalMoney = x + y * moneyOneMonth;
 document.write("Tong so tien nhan lai: " + totalMoney ); */
 
 // bai 1
-let i = 10
-let f = 20.5
-let b = true
-let s = 'Hà Nội'
-document.write('i = ' + i)
-document.write('<br/>')
-document.write('f = ' + f);
-document.write('<br/>')
-document.write('b = ' + b);
-document.write('<br/>')
-document.write('s = ' + s );
+// let i = 10
+// let f = 20.5
+// let b = true
+// let s = 'Hà Nội'
+// document.write('i = ' + i)
+// document.write('<br/>')
+// document.write('f = ' + f);
+// document.write('<br/>')
+// document.write('b = ' + b);
+// document.write('<br/>')
+// document.write('s = ' + s );
+//
+// // bai 2
+// let Width = 20
+// let Height = 10
+// let Area = width * height
+// document.write('<br>area = ' + area);
 
-// bai 2
-let width = 20
-let height = 10
+// bai 3
+let inputWidth
+let inputHeight
+inputWidth = prompt('Enter the width')
+inputHeight = prompt('Enter the height')
+let width = parseInt(inputWidth);
+let height = parseInt(inputHeight);
 let area = width * height
-document.write('<br>area = ' + area);
+document.write('<br> the area is ' + area);
