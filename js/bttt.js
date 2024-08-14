@@ -20,9 +20,27 @@ document.write('<br>tong diem ' + total)
 
 // Bai 3,4:
 
-let r
-r = +prompt('ban kinh hinh tron')
-let chuvi = 2 * r * Math.PI
-let dientich = r * r * Math.PI
-document.write('chu vi hinh tron ' + chuvi)
-document.write('dien tich hinh tron ' + dientich)
+// let r
+// r = +prompt('ban kinh hinh tron')
+// let chuvi = 2 * r * Math.PI
+// let dientich = r * r * Math.PI
+// document.write('chu vi hinh tron ' + chuvi)
+// document.write('dien tich hinh tron ' + dientich)
+
+
+function changeMoney(){
+    let amount = document.getElementById("amount").value;
+    let fromCurrency = document.getElementById("from").value;
+    let toCurrency = document.getElementById("to").value;
+    let result;
+    if (fromCurrency == "USD" && toCurrency == "VND"){
+        result = 'result ' + (amount * 25000) + 'Đ';
+    }else if(fromCurrency == "VND" && toCurrency == "USD"){
+        result = 'result ' + (amount / 25000) + '$'
+    }else if(fromCurrency == "VND"){
+        result = 'result ' + amount + 'VND'
+    }else{
+        result = 'result ' + amount + '$'
+    }
+    document.getElementById("result").innerHTML = result;
+}
