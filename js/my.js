@@ -37,7 +37,24 @@ document.write("Tong so tien nhan lai: " + totalMoney ); */
 // let Area = width * height
 // document.write('<br>area = ' + area);
 
-// bai 3
+/* bai 3
+function evenClickButton(){
+    let valueA = input.value;
+    let valueB = input.value;
+    let result = number(valueA) + number(valueB)
+
+    let resultH2 = document.getElementById("result");
+    resultH2.innerHTML= result;
+
+ */
+
+// Thuat toan chung tat ca cac bai
+
+/*
+    b1: lay gia tri input
+    b2: thuc hien tinh toan - thuat toan
+    b3: Hien thi dau ra
+
 let inputWidth
 let inputHeight
 inputWidth = prompt('Enter the width')
@@ -46,3 +63,25 @@ let width = parseInt(inputWidth);
 let height = parseInt(inputHeight);
 let area = width * height
 document.write('<br> the area is ' + area);
+*/
+
+
+// Bai tap ung dung may tinh
+
+function phepcong() {
+    let st1 = +document.getElementById("st1").value;
+    let st2 = +document.getElementById("st2").value;
+    let result;
+    result = st1 + st2;
+    document.getElementById("result").innerHTML = 'result: ' + result;
+}
+function pheptru() {
+    let st1 = +document.getElementById("st1").value;
+    let st2 = +document.getElementById("st2").value;
+    let result;
+    result = st1 - st2;
+    document.getElementById("result").innerHTML = 'result: ' + result;
+}
+
+
+
