@@ -37,7 +37,7 @@ if (useName == 'Admin'){
 }else {
     alert("I don't know you");
 }
- */
+
 // Bai 1
 let browser = prompt('Enter browser name')
 switch (browser) {
@@ -77,7 +77,22 @@ if (value > 0) {
 }else {
     alert(0);
 }
+ */
 
+// Bai 1
+ let a = prompt('a: ');
+ let b = prompt('b: ');
+ result = (a + b < 4) ? 'Below' : 'Over';
+ document.write(result);
 
-
+// Bai 2
+let login = prompt('Enter:');
+let message = (login == 'Employee') ?
+    'Hello' :
+    (login == 'Director') ?
+        'Greetings' :
+        (login == '') ?
+            'No login' :
+            '';
+alert(message);
 
