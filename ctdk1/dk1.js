@@ -20,7 +20,7 @@ if (value == 'ECMAScript') {
 } else {
     alert("You don't know? ECMAScript!");
 }
- */
+
 let useName = prompt("who's there", '')
 if (useName == 'Admin'){
     let pass = prompt("password", '');
@@ -37,3 +37,47 @@ if (useName == 'Admin'){
 }else {
     alert("I don't know you");
 }
+ */
+// Bai 1
+let browser = prompt('Enter browser name')
+switch (browser) {
+    case 'Edge':
+        alert('You have got the Edge!');
+        break;
+    case 'Chrome':
+    case 'Firefox':
+    case 'Safari':
+    case 'Opera':
+        alert('Okay we support these browsers too');
+        break;
+    default:
+        alert('we hope that this page looks ok !');
+}
+// Bai 2
+
+let a = +prompt('a?', '');
+switch (a) {
+    case 0:
+        alert(0);
+        break;
+    case 1:
+        alert(1);
+        break;
+    case 2:
+    case 3:
+        alert('2,3');
+        break;
+}
+// Bai 3
+let value = +prompt('Type a number', 0)
+if (value > 0) {
+    alert(1);
+}else if (value < 0){
+    alert(-1);
+}else {
+    alert(0);
+}
+
+
+
+
