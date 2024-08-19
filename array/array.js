@@ -16,6 +16,8 @@ arr.filter(value)
  */
 
 /*
+Bai 1
+
 let array = [1, 2, 4, 6, 7, 10, 1];
 let x = prompt('nhập giá trị cần tìm');
 let count = 0;
@@ -26,7 +28,8 @@ for (const value of array) {
     }
 }
 alert(count)
- */
+
+Bai 2:
 
 let x = 0;
 let array = Array();
@@ -43,4 +46,17 @@ function hienthi(){
     }
     document.getElementById('result').innerHTML = e;
 }
+ */
+
+let x = [-3, 5, 1, 3, 2, 10];
+let first = 0;
+let last = x.length - 1;
+while (first < last) {
+    let b = x[first];
+    x[first] = x[last];
+    x[last] = b;
+    first++;
+    last--;
+}
+document.write(x);
 
