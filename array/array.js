@@ -75,7 +75,6 @@ if (index > -1){
 }else {
     alert('value' + value + 'not found');
 }
- */
 
 let numbers = [-3, 5, 1, 3, 2, 10];
 let max = numbers[0];
@@ -87,3 +86,32 @@ for (let i = 1; i < numbers.length; i++){
     }
 }
 alert('max: ' + max + ' at position' + index)
+ */
+let b = document.getElementById("carogame");
+let board = [];
+let data = '';
+for (let i = 0; i < 5; i++) {
+    board[i] = new Array(0, 0, 0, 0, 0);
+}
+for (let i = 0; i < 5; i++) {
+    data += ' <br/> ';
+    for (let j = 0; j < 5; j++) {
+        data += board[i][j] + "&nbsp;&nbsp;";
+    }
+}
+data += "<br/><input type = 'button' value = 'change Value' onclick = 'changeValue()'>"
+b.innerHTML = data ;
+function changeValue(){
+    let positionX = prompt('X: ');
+    let positionY = prompt('Y: ');
+    data = '';
+    board[positionX][positionY] = 'x';
+    for (let i = 1; i < 5; i++) {
+        data += '<br/>';
+        for (let j = 0; j < 5; j++) {
+            data += board[i][j];
+        }
+    }
+    data += "<br/><input type = 'button' value = 'changeValue()'>"
+    b.innerHTML = '<hr/>' + data ;
+}
