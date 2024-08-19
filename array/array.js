@@ -47,7 +47,7 @@ function hienthi(){
     document.getElementById('result').innerHTML = e;
 }
 
-
+Bai 3
 let x = [-3, 5, 1, 3, 2, 10];
 let first = 0;
 let last = x.length - 1;
@@ -59,8 +59,9 @@ while (first < last) {
     last--;
 }
 document.write(x);
- */
 
+
+Bai 4
 let value = prompt("Enter a number");
 let numbers = [-3, 5, 1, 3, 2, 10];
 let index = -1;
@@ -74,4 +75,15 @@ if (index > -1){
 }else {
     alert('value' + value + 'not found');
 }
+ */
 
+let numbers = [-3, 5, 1, 3, 2, 10];
+let max = numbers[0];
+let index = 0;
+for (let i = 1; i < numbers.length; i++){
+    if (numbers[i] > max){
+        max = numbers[i];
+        index = i;
+    }
+}
+alert('max: ' + max + ' at position' + index)
