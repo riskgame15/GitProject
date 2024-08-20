@@ -87,6 +87,8 @@ for (let i = 1; i < numbers.length; i++){
 }
 alert('max: ' + max + ' at position' + index)
  */
+
+// Tao bang caro don gian
 let b = document.getElementById("carogame");
 let board = [];
 let data = '';
