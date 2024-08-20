@@ -89,6 +89,7 @@ alert('max: ' + max + ' at position' + index)
  */
 
 // Tao bang caro don gian
+/*
 let b = document.getElementById("carogame");
 let board = [];
 let data = '';
@@ -116,4 +117,48 @@ function changeValue(){
     }
     data += "<br/><input type = 'button' value = 'changeValue()'>"
     b.innerHTML = '<hr/>' + data ;
+}
+ */
+
+let b = document.getElementById("carogame");
+let board = [];
+let data = '';
+let h = 0;
+//Add cac phan tu vao mang hai chieu
+for (let i = 0; i < 5; i++) {
+    board[i] = ['(.)','(.)','(.)','(.)','(.)']
+}
+// Xu li hien thi ban dau
+for (let i = 0; i < 5; i++){
+    data += '<br>';
+    for (let j = 0; j < 5; j++){
+         data += board[i][j] + '&nbsp;&nbsp' ;
+    }
+}
+b.innerHTML = data;
+function changevalue(){
+    let positionX = parseInt(prompt('Enter x'));
+    let positionY = parseInt(prompt('Enter y'));
+    if (h % 2 === 0){
+        board[positionX][positionY] = 'x';
+    } else {
+        board[positionX][positionY] = 'o';
+    }h++;
+    for (i = 0; i < 5; i++){
+        data += '<br>';
+        for (let j = 0; j < 5; j++){
+            data += board[i][j] + '&nbsp;' + '&nbsp' + '&nbsp';
+        }
+    }b.innerHTML = data;
+    for (let i = 0; i < 5; i++){
+        for (let j = 0; j < 5; j++){
+            if (board[i][j] === 'x' && board[i][j+1] === 'x' && board[i][j+2] === 'x'||
+            board[i][j] === 'x' && board[i+1][j] === 'x' && board[i+2][j] === 'x'){
+                alert('X thắng')
+            } else if(board[i][j] === 'o' && board[i][j+1] === 'o' && board[i][j+2] === 'o'||
+            board[i][j] === 'o' && board[i+1][j] === 'o'&&board[i+2][j] === 'o'){
+                alert('O thắng');
+            }
+        }
+    }
 }
