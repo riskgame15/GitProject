@@ -44,7 +44,7 @@ for (i = 0; i < arr.length; i++) {
     }
 }
  */
-function transcript() {
+function translate() {
     let arr_eng = ['banana', 'apple', 'orange', 'chair', 'pen', 'pencil', 'book', 'lemon'];
     let arr_vie = ['chuối', 'táo', 'cam', 'cái ghế', 'bút', 'bút chì', 'sách', 'chanh'];
     let result = '';
