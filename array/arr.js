@@ -32,7 +32,8 @@
 // }
 // console.log(result.join(''));
 
-
+/*
+// Bai 4
 let arr = [2, 4, 5, 6, 20];
 let x = +prompt('Enter a number')
 let index = -1;
@@ -42,3 +43,22 @@ for (i = 0; i < arr.length; i++) {
         break
     }
 }
+ */
+function transcript() {
+    let arr_eng = ['banana', 'apple', 'orange', 'chair', 'pen', 'pencil', 'book', 'lemon'];
+    let arr_vie = ['chuối', 'táo', 'cam', 'cái ghế', 'bút', 'bút chì', 'sách', 'chanh'];
+    let result = '';
+    let string = document.getElementById('string').value;
+    let index_eng = 0;
+    for (let i = 0; i < arr_eng.length; i++) {
+        if (arr_eng[i] == string) {
+            index_eng = i;
+        }
+        for (j = 0; j < arr_vie.length; j++) {
+            if (index_eng == j) {
+                result = arr_vie[j];
+            }
+        }
+    } document.getElementById('result').innerHTML = result;
+}
+
