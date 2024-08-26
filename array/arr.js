@@ -1,4 +1,3 @@
-// bai 1
 // myColor = ['Red', 'Green', 'White', 'Black'];
 // console.log(myColor.toString());
 // console.log(myColor.join());
@@ -43,7 +42,7 @@ for (i = 0; i < arr.length; i++) {
         break
     }
 }
- */
+
 function translate() {
     let arr_eng = ['banana', 'apple', 'orange', 'chair', 'pen', 'pencil', 'book', 'lemon'];
     let arr_vie = ['chuối', 'táo', 'cam', 'cái ghế', 'bút', 'bút chì', 'sách', 'chanh'];
@@ -61,4 +60,43 @@ function translate() {
         }
     } document.getElementById('result').innerHTML = result;
 }
+ */
+
+// function translate(arr, value) {
+//     let string = document.getElementById('string').value;
+//     let index = indexOf(arr,value);
+//     if (index !== -1) {
+//     document.getElementById("result").innerText = arr_[index];
+//     } else {
+//     document.getElementById("result").innerText = "not found";
+//     }
+// }
+
+// bai 1
+
+
+
+// let a = +prompt('chieu dai')
+// let b = +prompt('chieu rong')
+// for (let i = 0; i < a; i++) {
+//     for (let j = 0; j < b; j++) {
+//         document.write('*')
+//     }document.write('<br>')
+// }
+
+// Thuc hanh su dung vong lap long nhau
+let x = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+let i = 1;
+let j = 1;
+while (i <= 10) {
+    x += '<tr>';
+    while (j <= 10) {
+        x += '<td>' + i * j + '</td>';
+        j++;
+    }
+    x += '</tr>';
+    j =1;
+    i++;
+}x += '</table>';
+document.write(x);
 
