@@ -72,19 +72,8 @@ function translate() {
 //     }
 // }
 
-// bai 1
-
-
-
-// let a = +prompt('chieu dai')
-// let b = +prompt('chieu rong')
-// for (let i = 0; i < a; i++) {
-//     for (let j = 0; j < b; j++) {
-//         document.write('*')
-//     }document.write('<br>')
-// }
-
 // Thuc hanh su dung vong lap long nhau
+/*
 let x = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
 let i = 1;
 let j = 1;
@@ -99,4 +88,74 @@ while (i <= 10) {
     i++;
 }x += '</table>';
 document.write(x);
+ */
 
+// bai 3:  ve 4 hinh tam giac
+
+// let a = +prompt('chieu dai')
+// let b = +prompt('chieu rong')
+// for (let i = 0; i < a; i++) {
+//     for (let j = 0; j < i; j++) {
+//         document.write('*')
+//     }document.write('<br>');
+// }
+//
+//
+// for (let i = 0; i < a; i++) {
+//     for (let j = a ; j > i; j--) {
+//         document.write('*')
+//     }document.write('<br>');
+// }
+//
+//
+// for (let i = 0; i < a; i++) {
+//     for (let j = 0; j < (a-i); j++) {
+//         document.write('&nbsp&nbsp');
+//     }
+//     for (let j = 0; j < i; j++) {
+//         document.write('*')
+//     }document.write('<br>');
+// }
+//
+//
+// for (let i = 1; i < a; i++) {
+//     for (let j = a ; j > i; j--) {
+//         document.write('*')
+//     }document.write('<br>');
+//     for (let j = 0; j < i; j++) {
+//         document.write('&nbsp&nbsp');
+//     }
+// }
+
+// bai 4 ve hinh chu nhat rong
+
+for (let i = 0; i < a; i++) {
+    for (let j = 0; j < b; j++) {
+        if (i === 0 || i === a -1 || j === 0 || j === b-1) {
+        document.write('*')
+        }else {
+            document.write('&nbsp&nbsp')
+        }
+    }document.write('<br>');
+}
+
+// bai 5 tinh tien lai ngan hang
+// let i = 0;
+// let totalMoney = 0;
+// while (true) {
+//     totalMoney = totalMoney + 1120000000 + 10/100 * (totalMoney + 1120000000);
+//     if (totalMoney >= 20000000000){
+//         break;
+//     }
+//     i = i + 1
+// }
+// document.write('Ban can tiet kiem: ' + i + ' nam');
+
+for( let i= 1; i < 6; i++) {
+    console.log(i);
+}
+let i = 1;
+while (i < 6){
+    console.log(i);
+    i++
+}

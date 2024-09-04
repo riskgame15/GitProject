@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            padding: 5px;
+        }
+    </style>
+    <p>QUẢN LÍ SÁCH</p>
+</head>
+<body>
+<table>
+    <tr>
+        <th></th>
+        <th>Mã số sách</th>
+        <th>Tên sách</th>
+        <th>Năm xuất bản</th>
+        <th>Số quyển</th>
+        <th>Tình trạng</th>
+        <th></th>
+    </tr>
+    <tbody id="list-student">
+
+    </tbody>
+</table>
+<div>
+    <button onclick="addBook()" id="add">Thêm sách đã có</button>
+    <button onclick="addNewBook()" id="addNew">Thêm sách mới</button>
+    <button onclick="borrowBook()" id="borrow">Mượn sách</button>
+    <button onclick="displayBook()" id="display">Hiển thị sách nhiều nhất</button>
+</div>
+
+<script src="baithi3.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

@@ -93,7 +93,6 @@ alert(n + '! = ' + gt)
 bai 5
 let a = +prompt('so 1');
 let b = +prompt('so 2');
-let result;
 for ( let i = 1; i <= a; i++) {
     if (a % i == 0 && b % i == 0) {
         console.log(i);

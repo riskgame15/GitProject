@@ -6,9 +6,6 @@ class Apple{
     getWeight() {
         return this.weight;
     }
-    setWeight(weight) {
-        this.weight = weight;
-    };
     isEmpty() {
         if(this.weight <= 0){
             return true;

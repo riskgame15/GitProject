@@ -123,7 +123,7 @@ function changeValue(){
 let b = document.getElementById("carogame");
 let board = [];
 let data = '';
-let h = 0;
+let h = 1;
 //Add cac phan tu vao mang hai chieu
 for (let i = 0; i < 5; i++) {
     board[i] = ['(.)','(.)','(.)','(.)','(.)']
@@ -137,8 +137,8 @@ for (let i = 0; i < 5; i++){
 }
 b.innerHTML = data;
 function changevalue(){
-    let positionX = parseInt(prompt('Enter x'));
-    let positionY = parseInt(prompt('Enter y'));
+    let positionX = (prompt('Enter x'));
+    let positionY = (prompt('Enter y'));
     if (h % 2 === 0){
         board[positionX][positionY] = 'x';
     } else {

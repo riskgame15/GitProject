@@ -21,5 +21,5 @@ let b1 = new ElectricLamp();
 let b2 = new ElectricLamp();
 let b3 = new ElectricLamp();
 
-let c1 = new SwitchButton(b1);
-let c2 = new SwitchButton(b2);
+let c1 = new SwitchButton();
+let c2 = new SwitchButton();
